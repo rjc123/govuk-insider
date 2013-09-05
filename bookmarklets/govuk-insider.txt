@@ -1,0 +1,1 @@
+<a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://raw.github.com/rjc123/govuk-insider/scripts/govuk-insider.js';})();">GOVUK INSIDER</a>
