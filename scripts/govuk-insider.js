@@ -21,7 +21,24 @@
 	
 	function initMyBookmarklet() {
 		(window.myBookmarklet = function() {
-			// your JavaScript code goes here!
+			// Insert Code Here
+			
+			{
+		var x;
+
+		var person=prompt("Please enter your name","Harry Potter");
+
+		if (person!=null)
+  			{
+  			x="Hello " + person + "! How are you today?";
+  			document.getElementById("demo").innerHTML=x;
+  			}
+		}
+			
+			
+			
+			
+			
 		})();
 	}
 
