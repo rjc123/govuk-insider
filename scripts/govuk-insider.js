@@ -1,3 +1,7 @@
+
+// Script in bookmarklet
+// javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://raw.github.com/rjc123/govuk-insider/master/scripts/govuk-insider.js';})();
+
 (function(){
 
 	// the minimum version of jQuery we want
@@ -21,23 +25,19 @@
 	
 	function initMyBookmarklet() {
 		(window.myBookmarklet = function() {
-			// Insert Code Here
 			
+			// Insert Bookmarklet Code Here
 			{
-		var x;
-
-		var person=prompt("Please enter your name","Harry Potter");
-
-		if (person!=null)
-  			{
-  			x="Hello " + person + "! How are you today?";
-  			document.getElementById("demo").innerHTML=x;
-  			}
+				var feedback=prompt("What's wrong with this page?","Enter specific feedback here");
+				if (feedback != null)
+  					{
+  			  			
+  					document.getElementById("what_doing").innerHTML="GOVUK INSIDER - Just browsing";
+  					document.getElementById("what_wrong").innerHTML=feedback;
+  			
+					document.getElementsByName("commit")[0].submit();
+  					}
 		}
-			
-			
-			
-			
 			
 		})();
 	}
