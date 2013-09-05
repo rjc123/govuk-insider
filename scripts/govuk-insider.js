@@ -31,11 +31,9 @@
 				var feedback=prompt("What's wrong with this page?","Enter specific feedback here");
 				if (feedback != null)
   					{
-  			  			
-  					document.getElementById("what_doing").innerHTML="GOVUK INSIDER - Just browsing";
-  					document.getElementById("what_wrong").innerHTML=feedback;
-  			
-					document.getElementsByName("commit")[0].submit();
+  			  		$('#what_doing').val("GOVUK INSIDER - Just browsing");
+  			  		$('#what_wrong').val(feedback);
+					$('.report-a-problem-container form').submit();
   					}
 		}
 			
