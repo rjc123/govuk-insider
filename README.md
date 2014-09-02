@@ -7,4 +7,8 @@ It prefixes any submission with "GOVUK INSIDER" with the intent that this could 
 
 It could also be further enhanced to provide types/effort/categorisation of errors, were someone with the appropriate skill set to get involved.
 
-Bookmarklet code: ```javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://raw.github.com/rjc123/govuk-insider/master/scripts/govuk-insider.js';})();```
+Bookmarklet code: 
+
+```
+javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://raw.githubusercontent.com/rjc123/govuk-insider/master/scripts/govuk-insider.js';})();
+```
